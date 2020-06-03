@@ -15,7 +15,7 @@ body{
     background-attachment: fixed;
     background-size: cover;
     padding: 40px 0;
-    width: 100%;
+    /* width: 100%; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -23,8 +23,8 @@ body{
 
 .main__wrapper{
     background-color: rgb(245, 220, 220);
-    width: 1100px;
-    height: 600px;
+    max-width: 1100px;
+    /* height: 600px; */
     border-radius: 30px;
     -webkit-box-shadow: 14px 10px 15px 0px rgba(0,0,0,0.75);
     -moz-box-shadow: 14px 10px 15px 0px rgba(0,0,0,0.75);
@@ -216,7 +216,64 @@ body{
     margin: 0 auto;
 }
 
-.wave{
-    height: 50px;
+svg{
     width: 100%;
+    /* background-color: brown; */
+    background-size: cover;
+    margin: 0;
+}
+
+
+
+
+/* ESTILOS DE LA SECCION DE ABOUT US */
+.aboutUs{
+    background-color: cornflowerblue;
+}
+
+.aboutUs__title{
+    font-size: 50px;
+    color: rgb(0, 0, 0);
+    text-align:center;
+    margin-top: 30px;
+}
+
+/* TODO: colocar a cada card con un fondo ligero blanco o gris y un borde redondeado*/
+.aboutUs article{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    max-width: 1100px;
+    
+    margin: 0 auto;
+    padding: 20px;
+    /* border-radius: 20px; */
+}
+
+/* .aboutUs__mission{
+    background-color: darkgreen;
+}
+
+.aboutUs__team{
+
+} */
+.mission__text, .team__text{
+    /* background-color: darkorange; */
+    width: 40%;
+}
+
+
+.mission__image, .team__image{
+   width: 50%;
+   /* background-color: darkred; */
+}
+
+.mission__text h2, .team__text h2{
+    font-size: 40px;
+    margin-bottom: 5px;
+    color: white;
+}
+
+.mission__text p, .team__text p{
+    font-size:23px
 }

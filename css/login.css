@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Open Sans';
+}
+.main{
+   display: grid;
+   background: rgb(219,170,199);
+   background: linear-gradient(to left bottom, rgba(219,170,199,1) 0%, rgba(189,124,163,1) 30%, rgba(101,70,140,1) 70%, rgba(124,76,185,1) 100%);
+
+
+   grid-template-columns: 1fr 6fr 1fr;
+   grid-template-rows: 1fr 6fr 1fr;
+   height: 100vh;
+   grid-template-areas: 'v1  texto v2'
+                        'v1  login v2'
+                        'v1  v3    v2';
+
+}
+
+
+.login__text{
+    font-size: 40px;
+    color: white;
+    text-align: center;
+    grid-area: texto;
+    justify-self: center;
+    align-self: center;
+    font-weight: lighter;
+}
+
+.login__wrapper{
+    display: flex;
+    max-width: 1200px;
+    margin: auto;
+    grid-area: login;
+    height: 100%;
+    overflow: hidden;
+    background-color: tomato;
+    border-radius: 40px;
+    -webkit-box-shadow: 15px 15px 14px 2px rgba(0,0,0,0.75);
+    -moz-box-shadow: 15px 15px 14px 2px rgba(0,0,0,0.75);
+    box-shadow: 15px 15px 14px 2px rgba(0,0,0,0.75);
+}
+
+.login__image{
+    width: 50%;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+    background: linear-gradient(to right, #593a7e, rgb(67, 33, 68));
+    
+    
+}
+
+.login__info{
+    background: linear-gradient(to right, rgb(156, 94, 131) , rgb(166, 112, 168));
+    width: 50%;  
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+    
+}
+
+.formUser{
+    /* background-color: khaki; */
+    width: 60%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+}
+
+.login__name, .login__password{
+    border: none;
+    border-bottom: solid 2px white;
+    background-color: transparent;
+    color: white;
+    font-size: 18px;
+}
+
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color: rgba(255, 255, 255, 0.822);
+    font-weight: lighter;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color: rgb(255, 255, 255);
+   opacity: 1 /* esto es porque Firefox le reduce la opacidad por defecto */;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color: rgb(255, 255, 255);
+   opacity:  1;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color: rgb(255, 255, 255);
+}
+
+
+input{
+    margin-top: 40px;
+    outline: none;
+}
+:focus { 
+    outline-color: transparent; 
+    outline-style: none;
+}
+
+
+.login__button{
+    font-size: 18px;
+    background-color: transparent;
+    border: 1px white solid;
+    color: white;
+    font-weight: lighter;
+    padding: 10px;
+}
+
+
+

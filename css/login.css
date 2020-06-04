@@ -10,7 +10,7 @@ body{
 .main{
    display: grid;
    background: rgb(219,170,199);
-   background: linear-gradient(to left bottom, rgba(219,170,199,1) 0%, rgba(189,124,163,1) 30%, rgba(101,70,140,1) 70%, rgba(124,76,185,1) 100%);
+   background: linear-gradient(to left bottom, rgb(184, 91, 147) 0%, rgb(180, 93, 145) 30%, rgb(99, 65, 141) 70%, rgb(109, 62, 170) 100%);
 
 
    grid-template-columns: 1fr 6fr 1fr;
@@ -57,7 +57,7 @@ body{
 }
 
 .login__info{
-    background: linear-gradient(to right, rgb(156, 94, 131) , rgb(166, 112, 168));
+    background: linear-gradient(to right, rgb(165, 67, 125) , hsl(299, 36%, 43%));
     width: 50%;  
     display: flex;
     justify-content: center;

@@ -40,11 +40,12 @@ body{
     grid-area: login;
     height: 100%;
     overflow: hidden;
-    background-color: tomato;
     border-radius: 40px;
     -webkit-box-shadow: 15px 15px 14px 2px rgba(0,0,0,0.75);
     -moz-box-shadow: 15px 15px 14px 2px rgba(0,0,0,0.75);
     box-shadow: 15px 15px 14px 2px rgba(0,0,0,0.75);
+
+    animation: growUp 900ms ease-in;
 }
 
 .login__image{
@@ -53,7 +54,16 @@ body{
     border-top-left-radius: 20px;
     background: linear-gradient(to right, #593a7e, rgb(67, 33, 68));
     
-    
+}
+
+@keyframes growUp {
+    0%{
+        transform: scale(0.5);
+    }
+
+    100%{
+        transform: scale(1);
+    }
 }
 
 .login__info{
@@ -117,6 +127,17 @@ input{
     color: white;
     font-weight: lighter;
     padding: 10px;
+    cursor: pointer;
+    transition: all ease-in 300ms;
+
+}
+
+.login__button:hover{
+    background-color: rgb(117, 46, 117);
+    -webkit-box-shadow: 8px 12px 28px -4px rgba(0,0,0,0.75);
+    -moz-box-shadow: 8px 12px 28px -4px rgba(0,0,0,0.75);
+    box-shadow: 8px 12px 28px -4px rgba(0,0,0,0.75);
+
 }
 
 

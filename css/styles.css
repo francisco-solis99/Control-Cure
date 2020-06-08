@@ -47,17 +47,22 @@ body{
    align-items: center;
 }
 
+.logo{
+    width:50px;
+    height:50px;
+}
+
 .logo__text{
     margin-left: 10px;
     font-size: 30px;
     display: inline-block;
     font-family: 'Proza Libre', sans-serif;
+    color: #4B2A58;
 }
 
 
 .menu__list{
     list-style-type: none;
-    color: #3C2D81;
     display: flex;
 }
 
@@ -71,10 +76,11 @@ body{
 .menu__item a{
     text-decoration: none;
     transition: all ease-in 300ms;
+    color: rgb(37, 50, 124) ;
 }
 
 .menu__item:hover a {
-    color: black;
+    color: rgb(212, 114, 127);
 }
 
 
@@ -458,26 +464,15 @@ svg{
 @media screen and (max-width:778px){
     .header{
         flex-direction: column;
-        /* background-color: lawngreen; */
     }
-    
+    .logo{
+        width:35px;
+        height:35px;
+    }
 
     .menu{
         margin: 10px 0;
     }
-/*     
-    .menu__list{
-        list-style-type: none;
-        color: #3C2D81;
-        display: flex;
-    } */
-    
-    /* .menu__item{
-        margin: 0 20px;
-        font-weight: 600;
-        font-size: 18px;
-        transition: all ease-in-out 300ms;
-    } */
     .menu__item{
         font-size: 16px;
         text-align: center;
@@ -527,7 +522,7 @@ svg{
     
     .hero__button{
         padding: 5px 20px;
-        width: 30%;
+        width: 120px;
         align-self: flex-end;
         text-align: center;
     }
@@ -592,3 +587,5 @@ svg{
         text-align: center;
     }
 }
+
+

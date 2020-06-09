@@ -126,12 +126,12 @@
                 <div class="contact__imageWrapper">
                     <img src="./images/aboutOption.svg" alt="Contact Us image" class="contact__img">
                 </div>
-                <form action="" class="contact__form">
+                <form action="php/mail.php" class="contact__form" method="POST">
                     <h2 class="contact__title">Contact Us</h2>
-                    <input type="email" placeholder="email" required class="contact__mail">
-                    <textarea name="message" id="" cols="30" rows="10" required placeholder="Message..." class="contact__msj"></textarea>
+                    <input type="email" placeholder="email" required class="contact__mail" name="mail">
+                    <textarea name="message" id="" cols="30" rows="10" required placeholder="Message..." class="contact__msj" name="message"></textarea>
                     <input type="submit" class="contact__button"
-                    value="Send">
+                    value="Send" name="sendButton">
                 </form>
         </article>
     </secttion>

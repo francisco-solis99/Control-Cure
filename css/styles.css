@@ -391,16 +391,67 @@ svg{
     background-color: rgb(82, 80, 110);
 }
 
+/* --------------------------------------- */
+/* Estilos de footer */
+
+
+.footer{
+    background-color: #140114;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row-reverse;
+    padding: 0 20px;
+    color: white;
+}
+
+.footer__logo h2{
+    font-family: 'Proza Libre';
+    font-size: 23px;
+    letter-spacing: 3px;
+    color: white;
+}
+.footer__logo p{
+    font-size: 12px;
+}
+
+.social__tittle{
+    font-size: 20px;
+    font-weight: lighter;
+    text-align: center;
+    margin-bottom: 10px;
+    color: #FE5356;
+}
+
+.social__icons{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.social__icon--item{
+    cursor: pointer;
+    padding: 5px;
+    
+}
+
+.social__icon--item a{
+    text-decoration: none;
+    color:white ;
+    transition: all ease-in 300ms;
+    
+}
+
+.social__icon--item:hover a{
+    color: #FE5356;
+}
 
 
 
 
-
-
-
-
-
-
+/*------------------------------- MEDIAS QUERYS PARA RESPONSIVE DESIGN ---------------------*/
 
 @media screen and (max-width:1200px){
     /* .services__wrapper{
@@ -594,6 +645,8 @@ svg{
         font-size: 34px;
         text-align: center;
     }
+
+    
 }
 
 
@@ -733,5 +786,24 @@ svg{
         font-size: 16px;
     }
     
+    
+
+    /* ESTILOS PARA FOOTER RESPONSIVE DESIGN */
+
+    .footer__logo h2{
+        font-size: 18px;
+
+    }
+    .footer__logo p{
+        font-size: 10px;
+    }
+    
+    .social__tittle{
+        font-size: 18px;
+    }
+    
 
 }
+
+
+/* dimensionar letras del hero y del about us */

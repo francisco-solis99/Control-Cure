@@ -194,8 +194,11 @@ body{
     width: 90%;
     max-width: 1100px;
     flex-wrap: wrap;
-    animation: toUp 1s ease-in;
+    
+    
 }
+
+    /* animation: toUp 1s ease-in; */
 
 @keyframes toUp{
     0%{
